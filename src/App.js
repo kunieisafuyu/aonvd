@@ -1,24 +1,29 @@
-import logo from './logo.svg';
+
+import Form from './Components/Form';
 import './App.css';
+import SimpleBottomNavigation from './Components/MainNav';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import { Container } from '@mui/system';
+
+import Image from './Components/Image';
 
 function App() {
   return (
+    <>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Form />
     </div>
+      <Image/>
+    <div className='navbarbot'>
+      <SimpleBottomNavigation />
+    </div>
+    </>
+
   );
 }
 

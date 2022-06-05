@@ -1,0 +1,51 @@
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 5px black;
+    background-color: aqua;
+    max-width: 400px;
+    margin: 15px auto; 
+    
+}
+.my_form{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 12px;
+}
+button{
+    margin-top: 10px;
+    background-color: red;
+    padding: 10px 0;
+}
+input{
+    outline: none;
+}
+
+.mainNav{
+    position: fixed;
+    bottom: 0;
+    background:orange;
+    z-index: 100;
+
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.img-item{
+    width: 40%;
+    text-align: center;
+}
+.item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
